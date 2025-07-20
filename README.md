@@ -58,27 +58,38 @@ Closest Approach Dates ➡️ Shows asteroids sorted by how close their paths we
 🛠 **Tech Stack Used**
 
 ✅ Google Colab – Used for writing Python code, handling API requests, and cleaning data.
+
 ✅ MySQL – Used to store structured asteroid data and run SQL queries.
+
 ✅ Streamlit – Used to build the interactive web dashboard.
+
 ✅ Pandas & Requests – Used for data handling and making API calls.
+
 ✅ NASA Open API – The official source of Near-Earth Object data.
 
 
 🎯 **Business Use Cases**
 
 🛰️ Asteroid Threat Monitoring – Filter by size, speed, and approach frequency
+
 📚 Education – Learn APIs, JSON parsing, SQL, and dashboards
+
 🔍 Real-Time Analysis – Enable researchers to track and query up-to-date NEO events
 
 🧩 **Key Learnings**
 
 Handling real-world API pagination
+
 Transforming JSON into normalized SQL schemas
+
 Writing complex SQL queries for scientific data
+
 Designing an intuitive dashboard for non-coders
 
 📎 **References**
 
 🔗 https://api.nasa.gov/
+
 📘 https://docs.streamlit.io/
+
 🛢️ https://dev.mysql.com/doc/
