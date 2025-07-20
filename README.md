@@ -1,48 +1,80 @@
 #🚀 **Nasa_Asteroids_Data**
 
-**Overview: NASA Asteroid Data**
-This project analyzes Near-Earth Object (NEO) asteroid data from NASA’s public API. It collects real-time asteroid approach information, stores it in a cloud SQL database, and presents interactive insights through a Streamlit-based web dashboard.
+A project that gathers, processes, and displays Near-Earth Object (NEO) asteroid data from NASA’s public API. It turns raw space data into meaningful insights using Python, SQL, and Streamlit, offering a live dashboard for easy exploration and filtering.
 
-The dashboard allows users to explore asteroid approach patterns — such as velocity, distance, frequency, and orbital behavior — using predefined queries or custom filters (e.g., date range, speed, distance).
 
-It's a complete ETL + SQL + Visualization pipeline, ideal for scientific exploration, learning, and presentations.
+📌 **Project Overview**
+This project focuses on:
 
-.
+📡 Tracking asteroid close approaches to Earth
 
-🧩**Steps Involved**
-**1. Data Collection**
-Retrieve asteroid data from NASA’s NEO Feed API for a selected date range.
+⚠️ Analyzing impact threats based on size, velocity, and distance
 
-**2. Data Transformation**
-Extract relevant fields like name, magnitude, speed, distance, and approach dates.
+📊 Providing researchers and learners with a user-friendly dashboard to explore asteroid patterns and behaviors
 
-Convert nested JSON into a clean, structured format.
 
-**3. Data Storage**
-Create two normalized tables:
+🧠 **Skills Gained**
+🔗 Working with online data using APIs (like NASA's)
+📄 Reading and organizing JSON data
+🧹 Cleaning and preparing data using Python
+📊 Creating and using databases with SQL
+🖥️ Building interactive dashboards with Streamlit
+⏱️ Filtering and viewing data instantly in real-time
 
-asteroids (basic info)
+:
 
-close_approach (event details)
+🧩 **Steps Involved**
+✅ Step 1: Register for NASA API Access
+Started by registering on NASA’s official API portal to receive a personal API key for accessing the Near-Earth Object Web Service.
 
-Insert the data into a TiDB Cloud (MySQL-compatible) database using Python.
+✅ Step 2: Extract Raw Asteroid Data
+Fetched asteroid data using the NASA API in 7-day intervals. Handled pagination to collect over 10,000 records related to close approaches, speeds, sizes, and orbital details.
 
-**4. SQL Querying**
-Write over 20 SQL queries to analyze asteroid behaviors:
+✅ Step 3: Clean and Structure the Data
+Parsed the JSON responses to extract essential attributes. Cleaned and converted the data into proper formats such as dates, floats, and booleans, and split the data into asteroid properties and close approach events.
 
-Fastest/closest approaches
+✅ Step 4: Store Data in a SQL Database
+Designed two structured SQL tables to store the cleaned data—one for general asteroid attributes and another for their approach details. Used parameterized insertions to load the dataset into the database.
 
-Monthly/yearly trends
+✅ Step 5: Perform Analytical SQL Queries
+Wrote multiple SQL queries to gain insights such as the fastest asteroids, closest approaches, most frequent visitors, and trends across different timeframes. Focused on scientific and safety-related insights.
 
-Orbiting body stats
+✅ Step 6: Build an Interactive Dashboard
+Developed a Streamlit-based dashboard with filters for distance, velocity, date, and hazard status. Connected the dashboard to the SQL database to allow users to run live queries and instantly visualize results.
 
-Asteroids with repeated approaches
+📊 **Sample Query Outputs**
+Top 10 Fastest Asteroids
+Displays asteroids with the highest velocity.
 
-**5. Dashboard Development**
-Build an interactive UI using Streamlit.
+Miss Distance < 1 Lunar Distance
+Lists asteroids that passed closer to Earth than the Moon.
 
-Include:
+Hazardous Asteroids
+Filters asteroids marked as potentially hazardous.
 
-Dropdown to run predefined queries
+Closest Approach Dates
+Shows asteroids sorted by how close their paths were to Earth.
 
-Sidebar filters for custom queries (date, AU, lunar distance, velocity)
+🛠 **Tech Stack Used**
+Google Colab – Used for writing Python code, handling API requests, and cleaning data.
+MySQL – Used to store structured asteroid data and run SQL queries.
+Streamlit – Used to build the interactive web dashboard.
+Pandas & Requests – Used for data handling and making API calls.
+NASA Open API – The official source of Near-Earth Object data.
+
+
+🎯 **Business Use Cases**
+🛰️ Asteroid Threat Monitoring – Filter by size, speed, and approach frequency
+📚 Education – Learn APIs, JSON parsing, SQL, and dashboards
+🔍 Real-Time Analysis – Enable researchers to track and query up-to-date NEO events
+
+🧩 **Key Learnings**
+Handling real-world API pagination
+Transforming JSON into normalized SQL schemas
+Writing complex SQL queries for scientific data
+Designing an intuitive dashboard for non-coders
+
+📎 **References**
+🔗 https://api.nasa.gov/
+📘 https://docs.streamlit.io/
+🛢️ https://dev.mysql.com/doc/
