@@ -3,6 +3,7 @@
 A project that gathers, processes, and displays Near-Earth Object (NEO) asteroid data from NASA’s public API. It turns raw space data into meaningful insights using Python, SQL, and Streamlit, offering a live dashboard for easy exploration and filtering.
 
 
+
 📌 **Project Overview**
 
 This project focuses on:
@@ -12,6 +13,7 @@ This project focuses on:
 ⚠️ Analyzing impact threats based on size, velocity, and distance
 
 📊 Providing researchers and learners with a user-friendly dashboard to explore asteroid patterns and behaviors
+
 
 
 🧠 **Skills Gained**
@@ -27,6 +29,7 @@ This project focuses on:
 🖥️ Building interactive dashboards with Streamlit
 
 ⏱️ Filtering and viewing data instantly in real-time
+
 
 
 🧩 **Steps Involved**
@@ -49,6 +52,8 @@ Wrote multiple SQL queries to gain insights such as the fastest asteroids, close
 ✅ Step 6: Build an Interactive Dashboard
 Developed a Streamlit-based dashboard with filters for distance, velocity, date, and hazard status. Connected the dashboard to the SQL database to allow users to run live queries and instantly visualize results.
 
+
+
 📊 **Sample Query Outputs**
 
 Top 10 Fastest Asteroids ➡️ Displays asteroids with the highest velocity.
@@ -58,6 +63,8 @@ Miss Distance < 1 Lunar Distance ➡️ Lists asteroids that passed closer to Ea
 Hazardous Asteroids ➡️ Filters asteroids marked as potentially hazardous.
 
 Closest Approach Dates ➡️ Shows asteroids sorted by how close their paths were to Earth.
+
+
 
 🛠 **Tech Stack Used**
 
@@ -72,6 +79,7 @@ Closest Approach Dates ➡️ Shows asteroids sorted by how close their paths we
 ✅ NASA Open API – The official source of Near-Earth Object data.
 
 
+
 🎯 **Business Use Cases**
 
 🛰️ Asteroid Threat Monitoring – Filter by size, speed, and approach frequency
@@ -79,6 +87,8 @@ Closest Approach Dates ➡️ Shows asteroids sorted by how close their paths we
 📚 Education – Learn APIs, JSON parsing, SQL, and dashboards
 
 🔍 Real-Time Analysis – Enable researchers to track and query up-to-date NEO events
+
+
 
 🧩 **Key Learnings**
 
@@ -89,6 +99,8 @@ Transforming JSON into normalized SQL schemas
 Writing complex SQL queries for scientific data
 
 Designing an intuitive dashboard for non-coders
+
+
 
 📎 **References**
 
