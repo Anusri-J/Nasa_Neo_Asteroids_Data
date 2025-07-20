@@ -17,13 +17,17 @@ This project focuses on:
 🧠 **Skills Gained**
 
 🔗 Working with online data using APIs (like NASA's)
+
 📄 Reading and organizing JSON data
+
 🧹 Cleaning and preparing data using Python
+
 📊 Creating and using databases with SQL
+
 🖥️ Building interactive dashboards with Streamlit
+
 ⏱️ Filtering and viewing data instantly in real-time
 
-:
 
 🧩 **Steps Involved**
 
